@@ -22,6 +22,8 @@ output_c_npy=$output_distance_folder/tracts_commissural/pairdist_${dis_measure}_
 output_l_npy=$output_distance_folder/tracts_left_hemisphere/pairdist_${dis_measure}_p${percentage}.npy
 output_r_npy=$output_distance_folder/tracts_right_hemisphere/pairdist_${dis_measure}_p${percentage}.npy
 
+$1 cp $ATLAS/cluster_hemisphere_location.txt $output_distance_folder
+
 if [ ! -f $output_c_npy ]; then
 	$1 bsub -q big-multi -n 20 \
 		python wm_pairwise_cluster_distance.py $ATLAS/tracts_commissural $output_distance_folder/tracts_commissural/pairdist_${dis_measure}_p${percentage}.npy -perc_fbs $percentage -dis_measure ${dis_measure} -j 20
