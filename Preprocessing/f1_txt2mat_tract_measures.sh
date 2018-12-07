@@ -2,7 +2,7 @@
 
 # This script computes tract measures such FA and num of fiber of subject-specific clusering results
 
-txt_tract_measure_folder=../NotGit/Projects/HCP-S500_one/subject_cluster_measure
+txt_tract_measure_folder=../NotGit/Projects/HCP-S500_one-FA/subject_cluster_measure
 
 txt_c_tract_measure_folder=$txt_tract_measure_folder/tracts_commissural
 txt_l_tract_measure_folder=$txt_tract_measure_folder/tracts_left_hemisphere

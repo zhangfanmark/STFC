@@ -1,10 +1,10 @@
 clc;clear;
 
-project_folder = '../NotGit/Projects/HCP-S500_one';
+project_folder = '../NotGit/Projects/HCP-S500_one-FA';
 
-subject_list = importdata(fullfile(project_folder, 'S500_one_100_SubjectsList.txt'));
+subject_list = importdata(fullfile(project_folder, 'SubjectList_S500Release_one_n100.txt'));
 
-demographics = readtable(fullfile(project_folder, 'S500_behavioral.csv'));
+demographics = readtable(fullfile(project_folder, 'S1200_demographics_Behavioral.csv'));
 
 IDs_in_demographics = demographics.Subject;
 
