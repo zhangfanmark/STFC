@@ -34,7 +34,7 @@ end
 % 4. Calculate the histogram of the maximal STFC size to produce the null distribution
 % (As in Algorithm 1)
 
-N_perms = 2000;
+N_perms = 10000;
 
 % Build the null distribution from permutation
 null_distribution_max_STFC_size = [];

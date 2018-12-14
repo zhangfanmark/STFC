@@ -16,15 +16,19 @@ else
 
         clear measures;
         for i = 2:size(txt_data.textdata, 1)
-            vtp_path = char(txt_data.textdata(i, 1)); 
+            [~, filename, ~] = fileparts(char(txt_data.textdata(i, 1)));
+            
+            vtp_path = filename; 
             measure_per_cluster = [];
             measure_per_cluster.(strtrim(char(txt_data.textdata(1, 1)))) = vtp_path;
             for j = 2:size(txt_data.textdata, 2)
                 field = strrep(strtrim(char(txt_data.textdata(1, j))), '.', '_');
                 measure_per_cluster.(field) = txt_data.data(i-1, j-1);
             end
-
-            cluster_number = str2double(vtp_path(end-9:end-5));
+    
+            cluster_number = strrep(vtp_path, '.vtp', '');
+            cluster_number = strrep(cluster_number, 'cluster_', '');
+            cluster_number = str2double(cluster_number);
             if isnan(cluster_number)
                 continue;
             end
