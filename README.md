@@ -13,7 +13,7 @@ This code implements deep learning tissue segmentation method using diffusion MR
     Suprathreshold fiber cluster statistics: Leveraging white matter geometry to enhance tractography statistical analysis 
     NeuroImage, 171, Pp. 341-354. 2020.
 
-    FaN Zhang, Ye Wu, Isaiah Norton, Yogesh Rathi, Nikos Makris and Lauren J. O'Donnell. 
+    Fan Zhang, Ye Wu, Isaiah Norton, Yogesh Rathi, Nikos Makris and Lauren J. O'Donnell. 
     An anatomically curated fiber clustering white matter atlas for consistent white matter tract parcellation across the lifespan. 
     NeuroImage, 2018 (179): 429-447
 
